@@ -8,7 +8,11 @@
     android:background="@color/white"
     android:gravity="center"
     tools:context=".MainActivity">
-
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="255dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/logo" />
     <LinearLayout
         android:id="@+id/lv_loading"
         android:layout_width="wrap_content"
@@ -16,17 +20,11 @@
         android:layout_gravity="center"
         android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="255dp"
-            android:layout_marginBottom="20dp"
-            android:src="@drawable/logo" />
-
         <com.wang.avi.AVLoadingIndicatorView
             android:id="@+id/avi"
             android:layout_gravity="center"
             android:layout_width="match_parent"
-            android:layout_height="255dp"
+            android:layout_height="match_parent"
             android:visibility="visible"
             app:indicatorColor="#FF9800"
             app:indicatorName="BallScaleRippleMultipleIndicator" />

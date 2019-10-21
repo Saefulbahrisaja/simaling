@@ -149,8 +149,8 @@ public class Login extends AppCompatActivity {
         String snik = t_username.getText().toString();
         String spass = t_password.getText().toString();
 
-        if(snik.isEmpty()){
-            t_username.setError("NIK tidak boleh kosong");
+        if(snik.isEmpty()|| t_username.length() < 16 || t_username.length() > 16){
+            t_username.setError("No KTP tidak boleh kosong, No KTP harus 16 digit angka");
             valid = false;
         }else {
             t_username.setError(null);

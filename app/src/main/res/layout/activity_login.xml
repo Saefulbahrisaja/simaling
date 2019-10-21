@@ -36,6 +36,8 @@
         android:drawableLeft="@drawable/ic_credit_card_black_24dp"
         android:drawablePadding="13dp"
         android:padding="16dp"
+        android:maxLength="16"
+        android:inputType="number"
         android:hint="NO. KTP"
         android:layout_below="@id/label1"
         android:layout_centerHorizontal="true"

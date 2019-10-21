@@ -138,8 +138,8 @@ public class daftar extends AppCompatActivity {
         String snik = noktp.getText().toString();
         String spass = password.getText().toString();
 
-        if(snik.isEmpty()){
-            noktp.setError("NIK tidak boleh kosong");
+        if(snik.isEmpty()|| noktp.length() < 16 || noktp.length() > 16){
+            noktp.setError("No KTP tidak boleh kosong No KTP harus diisi sebanyak 16 digit angka");
             valid = false;
         }else {
             noktp.setError(null);

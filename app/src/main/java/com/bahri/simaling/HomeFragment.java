@@ -122,7 +122,7 @@ public class HomeFragment extends Fragment {
 
 
         // jika internet aktfif
-        setupSliderOfline();
+        setupSlider();
 
         return rootView;
     }
